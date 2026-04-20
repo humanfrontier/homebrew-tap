@@ -1,6 +1,6 @@
 cask "skillcatalog" do
-  version "0.1.6"
-  sha256 "e6e1eb7a44be5b38f5516280c9f67c673ac015425b656e7972e86b344710b680"
+  version "0.1.7"
+  sha256 "3087d22b04490979c1648297816a367c89932cf8e9ff9f3ba749e2e33e066e55"
 
   url "https://github.com/humanfrontier/skillcatalog-releases/releases/download/v#{version}/SkillCatalog.app.tar.gz"
   name "SkillCatalog"
