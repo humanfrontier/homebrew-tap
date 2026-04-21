@@ -1,6 +1,6 @@
 cask "voicewink" do
-  version "1.73.1"
-  sha256 "b53e816c42a149f5489e9a0a67659cc92bcb43ce3e6ca0cc65912470be092642"
+  version "1.73.2"
+  sha256 "e189aa9b79498efbd549ddc46990549f1525e3c5770fb6abfcb7b374a61ea644"
 
   url "https://github.com/humanfrontier/voicewink/releases/download/v#{version}/VoiceWink-#{version}.zip"
   name "VoiceWink"
@@ -14,8 +14,10 @@ cask "voicewink" do
   caveats do
     <<~EOS
       This build is not notarized.
-      Homebrew 5.1 removed the --no-quarantine switch.
-      If macOS blocks it on first launch, remove quarantine after install:
+      If macOS blocks it on first launch, first use:
+        System Settings > Privacy & Security > Open Anyway
+
+      Terminal fallback:
         xattr -dr com.apple.quarantine "/Applications/VoiceWink.app"
     EOS
   end
