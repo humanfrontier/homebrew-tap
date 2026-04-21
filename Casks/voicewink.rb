@@ -14,10 +14,8 @@ cask "voicewink" do
   caveats do
     <<~EOS
       This build is not notarized.
-      If macOS blocks it on first launch, either install without quarantine:
-        brew install --cask --no-quarantine humanfrontier/tap/voicewink
-
-      Or remove quarantine after install:
+      Homebrew 5.1 removed the --no-quarantine switch.
+      If macOS blocks it on first launch, remove quarantine after install:
         xattr -dr com.apple.quarantine "/Applications/VoiceWink.app"
     EOS
   end
