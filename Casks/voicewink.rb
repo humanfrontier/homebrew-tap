@@ -1,6 +1,6 @@
 cask "voicewink" do
-  version "1.73.3"
-  sha256 "affe45f122a3be029113389dec1f509a75451582fb10cc597153807b8fd3071b"
+  version "1.73.4"
+  sha256 "2d0b78cb98687b1217c628395538c8c47830cfc72b7d74f36ee9053cef06a908"
 
   url "https://github.com/humanfrontier/voicewink/releases/download/v#{version}/VoiceWink-#{version}.zip"
   name "VoiceWink"
