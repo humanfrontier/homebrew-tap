@@ -2,7 +2,8 @@ cask "skillcatalog" do
   version "0.6.1"
   sha256 "c3d895df4e965f8cbefdf906443b0f20f298c73b85b1bd09440dcab93f19fb87"
 
-  url "https://github.com/humanfrontier/skillcatalog-releases/releases/download/v#{version}/SkillCatalog.app.tar.gz"
+  url "https://github.com/humanfrontier/skillcatalog-releases/releases/download/v#{version}/SkillCatalog.app.tar.gz",
+      verified: "github.com/humanfrontier/skillcatalog-releases/"
   name "SkillCatalog"
   desc "Git-native, local-first AI skill management"
   homepage "https://skillcatalog.dev"
