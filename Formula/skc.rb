@@ -2,14 +2,11 @@ class Skc < Formula
   desc "Git-native, local-first AI skill management CLI"
   homepage "https://skillcatalog.dev/"
   version "0.8.1"
+  url "https://github.com/humanfrontier/skillcatalog-releases/releases/download/v0.8.1/skc-v0.8.1-x86_64-unknown-linux-gnu.tar.gz"
+  sha256 "e5976b9f6779096801fee595aff6272ed4806eed2756628fefca5c3574758f24"
   license "AGPL-3.0-only"
 
-  on_linux do
-    on_intel do
-      url "https://github.com/humanfrontier/skillcatalog-releases/releases/download/v0.8.1/skc-v0.8.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e5976b9f6779096801fee595aff6272ed4806eed2756628fefca5c3574758f24"
-    end
-  end
+  depends_on :linux
 
   def install
     bin.install "skc"
