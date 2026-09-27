@@ -1,14 +1,13 @@
 cask "skillcatalog" do
-  version "0.8.1"
-  sha256 "d49f2439af88552afaf89419f9ce8139df201b1db95db9ef7ff8fc69631420dd"
+  version "0.9.0"
+  sha256 "1a9d2744a0211a9ee06d24ec0f1cea962ecb758e97ee7a2f5be553c4ac2dcadc"
 
-  url "https://github.com/humanfrontier/skillcatalog-releases/releases/download/v#{version}/SkillCatalog.app.tar.gz",
-      verified: "github.com/humanfrontier/skillcatalog-releases/"
+  url "https://github.com/humanfrontier/skillcatalog-releases/releases/download/v#{version}/SkillCatalog.app.tar.gz"
   name "SkillCatalog"
   desc "Git-native, local-first AI skill management"
   homepage "https://skillcatalog.dev/"
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "SkillCatalog.app"
   binary "#{appdir}/SkillCatalog.app/Contents/MacOS/skc"
